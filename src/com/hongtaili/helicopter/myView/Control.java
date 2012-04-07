@@ -2,7 +2,7 @@ package com.hongtaili.helicopter.myView;
 
 import com.hongtaili.helicopter.tool.MathUtils;
 
-import android.annotation.SuppressLint;
+ 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -109,7 +109,7 @@ public class Control extends SurfaceView implements Runnable, Callback {
 	}
 
 	//@Override
-	@SuppressLint({ "ParserError", "ParserError" })
+ 
 	public boolean onTouchEvent(MotionEvent event) {
 		int len = MathUtils.getLength(mCtrlPoint.x, mCtrlPoint.y, event.getX(),
 				event.getY());
@@ -172,7 +172,6 @@ public class Control extends SurfaceView implements Runnable, Callback {
 	}
 
 	// »ñÈ¡Ò¡¸ËÆ«ÒÆ½Ç¶È 0-360¡ã
-	@SuppressLint("ParserError")
 	private int getAngleCouvert(float radian) {
 		int tmp = (int) Math.round(radian / Math.PI * 180);
 		if (tmp < 0)
